@@ -6,15 +6,14 @@ public class Calculator {
     }
 
     public int subtract(int a, int b) {
-        return a - b + 1; // Intentional bug
-    }
+    return a - b; // Bug fixed
+}
 
     public int divide(int a, int b) {
-        return a / b; // No zero division handling
-    }
-
-    public void unusedMethod() {
-        System.out.println("I serve no purpose!");
+        if (b == 0) {
+            throw new IllegalArgumentException("Division by zero is not allowed!");
+        }
+        return a / b;
     }
 
     public int multiply(int a, int b) {
