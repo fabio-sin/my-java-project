@@ -1,0 +1,19 @@
+# Maven target folder
+/target/
+
+# Logs
+*.log
+
+# IDEs
+/.idea/
+/.vscode/
+/eclipse/
+/*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Sonar & Jenkins stuff
+.sonar/
+jenkins_home/
